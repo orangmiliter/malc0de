@@ -30,7 +30,7 @@ def handle(msg):
     args=text.split()
     command = args[0]
 
-    print 'Received: %s' % command
+    print ('Received: %s' % command)
 
     print(content_type, chat_type, chat_id)
 
