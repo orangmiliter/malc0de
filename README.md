@@ -1,5 +1,5 @@
 # malc0de Telegram Bot Scraping
-malc0de Telegram Bot Scraping adalah alat bantu untuk mengambil informasi "Date, Domain, IP, Autonomous System Name" dari website malc0de.com. malc0de bot telegram hanya mengambil data serangan untuk negara indonesia.
+malc0de Telegram Bot Scraping adalah alat bantu untuk mengambil informasi `Date, Domain, IP, Autonomous System Name` dari website malc0de.com. malc0de bot telegram hanya mengambil data serangan untuk negara indonesia.
 
 # Memasang Kebutuhan  
 `$ pip install requests atau pip3 install requests`  
