@@ -22,7 +22,7 @@ argspace = ' '.join(args.url)
 keyword = str(argspace)
 
 
-alamat = requests.get('http://malc0de.com/database/index.php?&search=ID&page=%s' % keyword).text.encode('utf-8')
+alamat = requests.get('http://malc0de.com/database/index.php?&search=ID&page=%s' % keyword).text
 listParse = re.findall(r"<td>(.*?)</td>", alamat, re.I | re.M)
 # print (listParse)
 
@@ -40,4 +40,4 @@ for parse in listParse:
     if i >= 7:
         writecsv.writerow([tempA[0], tempA[1], tempA[2], tempA[5]])
         i, tempA = 0, []
-print "malcode-%s-%s-%s.csv" % (tahun, bulan, hari)
+print ("malcode-%s-%s-%s.csv" % (tahun, bulan, hari))
