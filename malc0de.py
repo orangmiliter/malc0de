@@ -27,7 +27,7 @@ listParse = re.findall(r"<td>(.*?)</td>", alamat, re.I | re.M)
 # print (listParse)
 
 #hajarkeCSV
-filecsv = open('malcode/malcode-%s-%s-%s.csv' % (tahun, bulan, hari), 'a')
+filecsv = open('malcode/malcode-%s-%s-%s.csv' % (tahun, bulan, hari), 'w')
 writecsv = csv.writer(filecsv)
 writecsv.writerow(["Date", "Domain", "IP", "Autonomous System Name"])
 i = 0
