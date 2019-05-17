@@ -38,6 +38,6 @@ for parse in listParse:
         parse = re.findall(r">(.*?)</", parse, re.I | re.M)[0]
     tempA.append(parse)
     if i >= 7:
-        writecsv.writerow([tempA[0], tempA[1], tempA[2], tempA[5]])
+        writecsv.writerow([tempA[1], tempA[2], tempA[3], tempA[5]])
         i, tempA = 0, []
 print ("malc0de-p%s-%s-%s-%s.csv" % (keyword, tahun, bulan, hari))
